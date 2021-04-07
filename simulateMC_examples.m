@@ -46,7 +46,7 @@ n=100000;
 %Also find the median value of the resulting distribution.
 med = median(MCfuncVals)
 
-%Confirm that the samples of Y and Z have approximately the right correlation (0.5).
+%Show that the samples of Y and Z have approximately the right correlation (0.5).
 checkCorr = corrcoef(MCsamples(:,2),MCsamples(:,3))
 clear MCfuncVals MCsamples %clear these to save memory 
 return
@@ -73,12 +73,12 @@ dists = {{'Bootstrap',Wdata}
 funcVal = simulateMC(f,dists,n);
 return
 %Note: The methods 'Bootstrap','Fit','Custom', and 'BootstrapMean' cannot be
-%utilized by the simulateMC() for generating correlated samples.
+%utilized by simulateMC() for generating correlated samples.
 
 
 %EXAMPLE 4
-%Combine samples from six different distributions where a group of 3 is 
-% distributions are correlated and another group of 2 is correlated. 
+%Combine samples from six different distributions where a group of 3
+% distributions are correlated and another group of 2 are correlated. 
 %Some of the distributions are truncated.
 
 %Specify a maximum correlation error of 0.1% for the correlated
