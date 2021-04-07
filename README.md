@@ -1,6 +1,6 @@
 # MATLAB_Monte_Carlo_sim
 
-simulateMC() is a tool to generate samples from user-specified distributions and combine the samples through an arbitrary function. 
+simulateMC() is a tool to generate samples from user-specified distributions and combine the samples through an arbitrary function in MATLAB. 
 It can also be used as a tool for propagation of uncertainty or just for generating correlated samples.
 
 simulateMC() does the following:
