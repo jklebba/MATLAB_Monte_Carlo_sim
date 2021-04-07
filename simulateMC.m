@@ -23,7 +23,7 @@ function [funcVal, stdev, CI, MCfuncVals, MCsamples]= simulateMC(func,dists,N,va
 %       https://www.mathworks.com/help/stats/supported-distributions.html
 %   'Custom', 'Bootstrap', 'BootstrapMean', 'Fit' and 'Corr' are  additional 
 %   options for 'DistributionType'. To see more about them examine the 
-%   relevant commens in the code below and look in 'simulateMC_examples.m'.
+%   relevant comments in the code below and look in 'simulateMC_examples.m'.
 
 % OUTPUTS: 
 %   funcVal     Calculated function value. Defaults to center of CI. Can be mean, median, or max/min.
@@ -123,7 +123,7 @@ while(distIdx < size(dists,1))
     distType = dists{distIdx}{1};
     switch(distType)
         case {'Bootstrap','bootstrap'}
-            %Bootstrap a sample of size N from a user provided data.
+            %Bootstrap a sample of size N from user provided data.
             %Syntax is:  {'Bootstrap',datavec}
             data=dists{distIdx}{2};
             [rown,coln]=size(data);
@@ -225,11 +225,11 @@ while(distIdx < size(dists,1))
         case {'Uniform','uniform'}
             %Enables uniform samples to be generated without the need for 
             %the Statistics and Machine Learning Toolbox.
-            %Syntax is: {'Uniform',upperbound,lowerbound)
+            %Syntax is: {'Uniform',upperbound,lowerbound}
             sampledVars{sampIdx} = dists{distIdx}{2} + (dists{distIdx}{3}-dists{distIdx}{2})*rand(N,1);
         otherwise
             %Sample a distribution specified by the distribution params
-            %   Syntax is: {'DistributionName',param_1, ... ,param_n)
+            %   Syntax is: {'DistributionName',param_1, ... ,param_n}
             %One can also specify a truncated distribution like so:
             %   {'DistributionType',param_1, ... ,param_n,'trunc',lowerCutOff,upperCutOff}
             
