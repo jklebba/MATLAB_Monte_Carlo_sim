@@ -78,7 +78,7 @@ return
 
 %EXAMPLE 4
 %Combine samples from six different distributions where a group of 3
-% distributions are correlated and another group of 2 are correlated. 
+%distributions are correlated and another group of 2 are correlated. 
 %Some of the distributions are truncated.
 
 %Specify a maximum correlation error of 0.1% for the correlated
