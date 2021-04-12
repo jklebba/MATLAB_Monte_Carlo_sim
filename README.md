@@ -2,10 +2,10 @@
 
 <img src="hist_image.PNG" width="723" height="290">
 
-simulateMC() is a tool to generate samples from user-specified distributions and combine the samples through an arbitrary function in MATLAB. 
+simulateMC is a tool to generate samples from user-specified distributions and combine the samples through an arbitrary function in MATLAB. 
 It can also be used as a tool for propagation of uncertainty or just for generating correlated samples.
 
-simulateMC() does the following:
+simulateMC does the following:
 * Supports most/all of the distribution types in MATLAB's statistics and machine learning toolbox, including truncated distributions.
 * Can generate correlated samples from any combination of distributions via a gaussian copula approach with iterative optimization of correlation parameters
 * Supports bootstrapping samples from data
