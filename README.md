@@ -12,7 +12,7 @@ simulateMC does the following:
 * Supports fitting distributions to data and drawing samples from the fitted distribution
 * Supports custom sample inputs
 * Finds confidence intervals and descriptive statistics
-* Allows for visualization of the uncertainty distributions using histogram plots.
+* Allows for visualization of the distributions using histogram plots.
 
 ## Usage
 Explanations of syntax and simple examples are included in the comments of the function file. More detailed examples can be found in the included file 'simulateMC_examples.m'.
