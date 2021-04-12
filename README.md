@@ -1,4 +1,4 @@
-# MATLAB_Monte_Carlo_sim
+# simulateMC
 
 <img src="hist_image.PNG" width="723" height="290">
 
